@@ -1,0 +1,707 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        padding: 0;
+        }
+
+        body {
+            width: 100vw;
+            height: 100vh;
+            overflow-x: hidden;
+        }
+
+
+        .main-container {
+
+            width: 100%;
+            height: 100%;
+            overflow-y: auto;
+            overflow-x: scroll;
+            
+            position:relative;
+
+
+
+
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            width: 100%;
+            margin-top: 20px;
+            box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.0);
+            position: sticky;
+            box-shadow: 0 2px 5px #0000001a;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            position: sticky;
+            /*align-items: center;*/
+
+        }
+
+        .logo {
+
+            margin-left: 10px;
+
+
+        }
+
+        .tags {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+           color: #333;;
+            
+
+        }
+
+        .tags h3:hover {
+            color: deepskyblue;
+        }
+
+        .btn {
+        
+    
+      padding: 10px 10px 10px 10px;    
+    cursor: pointer;
+    border-radius: 50px;
+    color: white;
+    transition: 0.3s;
+    font-size: 18px;
+     background-color: deepskyblue;
+     
+        }
+       
+        h1 {
+            padding: 80px;
+            /* margin-left: 180px; */
+            width: 1100px;
+            font-size: 60px;
+            text-align: center;
+            margin-left: 10px;
+            /* margin-right: 200px; */
+            
+        }
+
+        .paragragh-emp {
+            text-align: center;
+            padding-top: 0px;
+            width:80%;
+            font-size: 18px;
+            margin: auto;
+           margin-left: 70px;
+           /* margin-right: 50px;*/
+
+              
+
+        }
+
+        .carts {
+            display: flex;
+            justify-content: space-around;
+            width: max;
+            margin-left: 20px;
+            gap: 10px;
+            padding: 30px;
+        }
+
+        .cart1 {
+            width: 400px;
+            height: 400px;
+            background-color: aliceblue;
+            border-radius: 10px;
+        }
+
+        .cart1 h3 {
+           /* display: flex;*/
+            padding-top: 20px;
+          /*  justify-content: center;
+            align-items: center;*/
+            margin-left: 50px;
+            margin-right: 50px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+
+        }
+
+        .image {
+            width: 300px;
+        }
+
+        .customer {
+            display:flex;
+            justify-content: center;
+            text-align: center;
+
+            /* margin-left: 35%; */
+            padding: 50px;
+            color: black;
+            font-size: 30px;
+        }
+
+        .pictures {
+            display: flex;
+            justify-content:center;
+            align-items:center;
+            flex-wrap: wrap;
+            gap:40px;
+            
+
+        }
+
+         .logos {
+             width: 250px;
+         }
+
+      /*  .logo1 {
+            display:flex;
+            width: 200px;
+           padding: 60px;
+           justify-content: center;
+           align-items: center;
+
+        }*/
+
+        .about {
+            position: relative;
+            width: 100%;
+
+        }
+
+        .head {
+            margin-left: 70px;
+            width: 700px;
+            font-size: 40px;
+
+
+        }
+
+        .para {
+            margin-left: 100px;
+            width: 700px;
+           font-size: 18px;
+        }
+
+        .photo {
+            width: 250px;
+            position: absolute;
+            left: 75%;
+            top: 10px;
+
+        }
+        .para8{
+            position:absolute;
+            left:75%;
+            top: 350px;
+            text-align: center;
+            color:green;
+            font-size: 20px;
+            margin-left: 30px;
+        }
+
+        .set {
+            display: flex;
+            gap:40px;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .heading {
+            padding:50px;
+            /* margin-left: 30%; */
+            text-align: center;
+            font-size: 24px;
+
+        }
+        .button{
+            display: flex;
+            flex-direction: column;
+            gap:20px;
+
+        }
+
+        .butt {
+     padding: 10px 20px;
+    border: 1px solid;
+    cursor: pointer;
+    border-radius: 50px;
+    background: white;
+    transition: background-color .3s;
+    font-size: 18px;
+
+            
+        }
+
+        .para1 {
+            width: 600px;
+            font-size: 18px;
+            
+        }
+
+        .services{
+            margin-right: 20px;
+            background-color: rgb(173, 216, 230);
+   
+
+}
+        .services1 {
+            text-align: center;
+            font-size: 24px;
+            
+            
+
+        }
+
+        .services2 {
+            
+            /* margin-left: 15%; */
+            /* margin-right: 40%; */
+            font-size: 18px;
+            width: 800px;
+            text-align: center;
+            margin-left: 150PX;
+
+
+
+        }
+
+        .section {
+            display: flex;
+         /*  align-items: center;*/
+            justify-content: space-between;
+            flex-wrap: wrap;
+        
+
+        }
+
+        .section1 {
+            width: 400px;
+            height: 400px;
+           display: flex;
+           flex-direction: column;
+            justify-content:start ;
+            border-radius: 10px;
+            margin-bottom: 30px;
+          /*  text-align: center;*/
+        }
+        .image1{
+            display:flex;
+            justify-content:center;
+            align-items: center;
+        }
+
+
+
+
+        
+        .img1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100px;
+            /* margin-left: 60%; */
+
+        }
+
+         .para2 {
+            width: 350px;
+            gap: 5px;
+            font-size: 15px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+             margin-left:10px;
+        }
+
+        .par1 {
+             width:400px;
+             text-align: center;
+            font-size: 15px;
+            margin-left: 0px;
+    
+       }
+       .head4{
+             display:flex;
+            justify-content:center;
+            align-items: center;
+
+       }
+       h2{
+        
+        
+        text-align: center;
+        padding:20px;
+        font-size: 30px;
+
+       }
+       .para3{
+        padding:0px;
+        width:1000px;
+        font-size: 18px;
+        margin-left: 70px;
+        
+       }
+       .Approach-button{
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        gap:30px
+       }
+       .button1{
+    padding: 10px 20px;
+    border: 1px solid;
+    cursor: pointer;
+    border-radius: 50px;
+    background: white;
+    transition: background-color .3s;
+    font-size: 18px;
+
+       }
+       .subtitle{
+        display:flex;
+        padding:20px;
+        justify-content: center;
+        align-items: center;
+        margin: auto;
+    }
+    .title{
+        width:800px
+    }
+        
+      .heading2{
+            text-align:center
+        }
+        .para4{
+            width:600px;
+            margin-left: 10px;
+            font-size: 18px;
+            
+        }
+        /*  .details{
+            /* padding: 50px; 
+            display:flex;
+            width: 50%;
+            justify-content: center;
+            align-items: center;
+        
+        }
+        .first{
+            /* margin-left: 0px; 
+            width:600px;
+            
+        }
+        .talk{
+            width:500px;
+            margin-left: 0px;
+            text-align:center;
+
+        }
+        .para5{
+            width:500px;
+            margin-left: 0px;
+        }
+        .para6{
+            width:70px;
+            
+        }
+        .para7{
+            width:40px;
+        }
+        .us{
+            width:70px;
+            margin-left: 0px;
+        }*/
+       .footer{
+        display: flex;
+        flex-direction:row;
+       /* justify-content: space-between;*/
+        background-color:#f8f9fa;
+        
+       }
+      .column{
+        display:block;
+        display: flex;
+        /* justify-content: space-around; */
+         gap:200px; 
+         margin-left:20%;
+        
+      }
+      
+       
+       
+
+        
+    </style>
+</head>
+
+<body>
+    <div class="main-container">
+        <div class="header">
+
+            <img src="https://elberttech.com/assets/Elbert_logo-BU5PwBXZ.svg" class="logo">
+            <div class="tags">
+                <h3>Home</h3>
+                <h3>Services</h3>
+                <h3>Products</h3>
+                <h3>Industries</h3>
+                <h3>Trainings</h3>
+            </div>
+            <div>
+                <button class="btn">Contact</button>
+                
+            </div>
+            </header>
+        </div>
+
+
+        <div>
+            <h1>Innovative <span style="color:deepskyblue">Solutions </span>for Tomorrow’s<span
+                    style="color:deepskyblue"> Challenges</span>
+            </h1>
+            <p class="paragragh-emp">Empowering businesses with cutting-edge technology and strategic insights to navigate tomorrow's
+                challenges today. Our solutions are designed to drive growth, streamline operations, and enhance
+                resilience in an ever-evolving landscape.</p>
+        </div>
+        <div class="carts">
+            <div class="cart1">
+                <h3>Accelerate <span style="color:green">Business Success</span> with Smarter<span style="color:green">
+                        CRM</span></h3>
+                <img src="https://elberttech.com/assets/Accelerate-B32tToD_.svg" class="image">
+            </div>
+            <div class="cart1">
+                <h3>Create, Customize, and Impress - <span style="color:orange">Resume Game</span></h3>
+                <img src="https://elberttech.com/assets/Resume-fjBDqSwc.svg" class="image">
+            </div>
+            <div class="cart1">
+                <h3>Effortless <span style="color:deepskyblue"> Portfolio Building</span> for Every Creative</h3>
+                <img src="https://elberttech.com/assets/Portfolio-C0tuf8rt.svg" class="image">
+            </div>
+        </div>
+        <div>
+            <h3 class="customer">OUR CUSTOMERS</h3>
+        </div>
+        <div>
+            <div class="pictures">
+                <img src="https://elberttech.com/assets/Vprotech_logo-BlAgpSrE.svg" class="logos">
+                <img src="https://elberttech.com/assets/Atishay-DxwEgRkN.png" class="logos">
+                <img src="data:image/svg+xml,%3csvg%20width='355'%20height='56'%20viewBox='0%200%20355%2056'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3cg%20clip-path='url(%23clip0_405_26724)'%3e%3cpath%20d='M44.9503%2023.3921H12.7235V30.854H43.083V40.9595H12.7235V54.9926H0.242188V13.21H44.9503V23.3921Z'%20fill='%232B3B68'/%3e%3cpath%20d='M80.529%2054.9926H68.0191V39.9826L45.4492%2013.21H60.8215L74.26%2029.8194L88.3369%2013.21H103.155L80.529%2039.9826V54.9926Z'%20fill='%232B3B68'/%3e%3cpath%20d='M163.001%2054.9926H144.691L120.142%2024.5992V54.9926H107.66V13.21H126.167L150.548%2043.8525V13.21H163.001V54.9926Z'%20fill='%232B3B68'/%3e%3cpath%20d='M184.453%2044.8871H211.697V54.9926H171.943V13.21H184.453V44.8871Z'%20fill='%232B3B68'/%3e%3cpath%20d='M231.314%2054.9923H218.805V13.21L231.286%2025.9201L231.314%2054.9923Z'%20fill='%232B3B68'/%3e%3cpath%20d='M293.88%2054.9926H275.571L251.02%2024.5992V54.9926H238.539V13.21H257.045L281.427%2043.8525V13.21H293.88V54.9926Z'%20fill='%232B3B68'/%3e%3cpath%20d='M341.122%2028.2772V27.8557C341.122%2026.2271%20340.596%2025.0394%20339.536%2024.2827C338.485%2023.5261%20336.815%2023.1429%20334.525%2023.1429H324.511C320.223%2023.1429%20317.473%2023.6697%20316.253%2024.7331C315.033%2025.7868%20314.423%2027.9996%20314.423%2031.3617V37.176C314.423%2040.1837%20315.099%2042.2529%20316.46%2043.3735C317.811%2044.494%20320.495%2045.0594%20324.512%2045.0594H331.775C335.754%2045.0594%20338.354%2044.6572%20339.593%2043.8429C340.831%2043.0286%20341.451%2041.5151%20341.451%2039.3121V38.862H354.129C354.129%2038.9193%20354.139%2039.0249%20354.158%2039.1682C354.214%2040.3847%20354.242%2041.2948%20354.242%2041.8888C354.242%2044.5707%20353.913%2046.774%20353.247%2048.5173C352.59%2050.2512%20351.558%2051.6494%20350.141%2052.6938C348.799%2053.709%20347.025%2054.4276%20344.792%2054.8584C342.567%2055.2895%20339.302%2055.5003%20334.994%2055.5003H321.02C316.75%2055.5003%20313.607%2055.2705%20311.589%2054.801C309.58%2054.3319%20307.853%2053.5366%20306.427%2052.4161C304.775%2051.0845%20303.574%2049.4565%20302.823%2047.5214C302.072%2045.5765%20301.697%2043.1341%20301.697%2040.184V28.7853C301.697%2022.7983%20303.086%2018.6222%20305.873%2016.2563C308.661%2013.8901%20313.71%2012.7026%20321.02%2012.7026H334.994C339.48%2012.7026%20342.792%2012.9036%20344.913%2013.3157C347.044%2013.7277%20348.724%2014.427%20349.953%2015.3944C351.248%2016.4097%20352.206%2017.7698%20352.825%2019.4843C353.435%2021.1896%20353.745%2023.3349%20353.745%2025.9214C353.745%2026.5345%20353.735%2027.0134%20353.735%2027.3389C353.726%2027.6645%20353.698%2027.9808%20353.66%2028.2778H341.122L341.122%2028.2772Z'%20fill='%232B3B68'/%3e%3cpath%20fill-rule='evenodd'%20clip-rule='evenodd'%20d='M218.832%200.5H231.285V13.2101L218.832%200.5Z'%20fill='%2354AF3A'/%3e%3c/g%3e%3cdefs%3e%3cclipPath%20id='clip0_405_26724'%3e%3crect%20width='354'%20height='55'%20fill='white'%20transform='translate(0.242188%200.5)'/%3e%3c/clipPath%3e%3c/defs%3e%3c/svg%3e"
+                    class="logos">
+                 <img src="https://elberttech.com/assets/Learnit_logo-aK4Ft6W9.svg" class="logos"> 
+                 <img src="https://elberttech.com/assets/EGS-BkIsQaLc.png" class="logos">
+            </div>
+            <!--<div>
+                <img src="https://elberttech.com/assets/EGS-BkIsQaLc.png" class="logo1">
+            </div>
+        </div>-->
+        <div class="about">
+            <div>
+                <h1 class="head">We Integrate  <span style="color:green">Logic</span>, <span style="color:orange"> Creativity</span>, and  <span style="color:deepskyblue">Curiosity </span>to Forge New Paths and Solutions</h1>
+                <p class="para">At Elbert Technology, we're more than just a technology company—we're pioneers on a
+                    mission to redefine the future through innovative solutions. Established with a bold vision to
+                    empower businesses and individuals alike with cutting-edge digital tools, we blend expertise with
+                    creativity to shape the technological landscape.</p>
+            </div>
+            <div>
+                <img src="https://elberttech.com/assets/rajeshrangisetti-CrrfupJB.png" class="photo">
+           </div>
+           <div>
+                <p class="para8">Rangisetti Rajesh</p>
+                
+            </div>
+        </div>
+        <h3 class="heading">What Set Us<span style="color:deepskyblue"> Apart?</span></h3>
+        <div class="set">
+            <div class="button">
+                <button class="butt">Innovation at the core</button>
+                <button class="butt">client-centric solutions</button>
+                <button class="butt">Expert team with divert skills</button>
+                <button class="butt">Long term internships</button>
+            </div>
+            <div>
+                <p class="para1"> At Elbert Tech, innovation isn’t just a buzzword; it’s the heart of everything we do.
+                    We leverage cutting-edge technologies and creative solutions to help your business stay ahead of the
+                    curve. Our team is constantly exploring and experimenting with emerging trends to bring you the best
+                    in digital transformation. From initial concept to final deployment, we approach each project with a
+                    mindset of curiosity and forward-thinking, always striving to find smarter, more efficient ways to
+                    solve problems. Our commitment to continuous learning and adaptation enables us to craft solutions
+                    that aren’t just relevant today but remain resilient in the future.</p>
+            </div>
+        </div>
+        <div class="services">
+            <h1 class="services1">Our Core<span style="color:deepskyblue"> Services</span></h1>
+            <p class="services2">At Elbert Technology, we offer a comprehensive suite of services designed to empower
+                your business with advanced, tailored solutions. Our expertise spans critical areas essential for
+                success in today’s digital world.</p>
+            <div class="section">
+                <!---- <div class="section1">--->
+                <div class="section1">
+                    <div  class="image1" >
+                    <img src="https://elberttech.com/assets/Strategies-BWOw3jLc.svg" class="img1">
+                    </div>
+                    <div class="head4">
+                    <h4 class="head4">strategy</h4></div>
+                    <div class="par1">
+                     <p class="par1"><span style="color:deepskyblue">Building a roadmap for success</span></p> </div>
+                    
+                    <p  class="para2">Crafting strategies tailored to your unique goals and challenges, we pave the path
+                        for your success through insightful planning and execute</p>
+                </div>
+                <div class="section1" >
+                    <div  class="image1">
+                    <img src="https://elberttech.com/assets/Engineering-08ZMEVom.svg" class="img1">
+                    </div>
+                    <div class="head4">
+                    <h4 class="head4">Engineering</h4></div>
+                   <div class="par1">
+                     <p class="par1"><span style="color:deepskyblue">Transforming ideas into robust solutions</span></p></div> 
+                   <div class="para2">
+                    <p  class="para2">Utilizing cutting-edge technology and innovative solutions, our engineering team
+                        transforms ideas into reality with precision and expertise.</p></div>
+                </div>
+                <div class="section1">
+                    <div  class="image1">
+                    <img src="https://elberttech.com/assets/Cloud-DtgEf077.svg" class="img1">
+                    </div>
+                    <div class="head4">
+                    <h4 class="head4">cloud</h4></div>
+                    <div class="par1">
+                     <p class="par1"><span style="color:deepskyblue">Unlocking agility and scalability</span></p> </div>
+                   
+                    <p class="para2">Harness the power of the cloud to streamline operations, enhance scalability, and
+                        drive innovation for your business with our comprehensive cloud solutions.</p>
+
+                </div>
+
+                <div class="section1">
+                    <div  class="image1">
+                    <img src="https://elberttech.com/assets/DA-9WOkVtWz.svg" class="img1">
+                    </div>
+                    <h4 class="head4">Data &Analytics</h4>
+                    <div class="par1">
+                    <p class="par1"><span style="color:deepskyblue">Turning data into strategic assets</span></p> </div>
+                   
+                    <p  class="para2">Leverage data and analytics to gain valuable insights, make informed decisions, and
+                        drive your business forward with our advanced tools and expertise.</p>
+                </div>
+                <div class="section1">
+                    <div class="image1">
+                    <img src="https://elberttech.com/assets/AI-CJrDOzOX.svg" class="img1">
+                    </div>
+                    <h4 class="head4">Artificial Intelligence</h4>
+                    <div class="par1">
+                     <p class="par1"><span style="color:deepskyblue"></span>Empowering your business with intelligent 
+                        insights</p></div>
+                        
+                    <p  class="para2">Unlock the potential of artificial intelligence to revolutionize your business
+                        processes, enhance efficiency, and propel innovation with our cutting-edge AI solutions and
+                        expertise.</p>
+                </div>
+                <div class="section1">
+                    <div class="image1">
+                    <img src="https://elberttech.com/assets/Cyber-CkPDm6CY.svg" class="img1">
+                    </div>
+                    <h4 class="head4">Cyber security</h4>
+                    <div class="par1">
+                    <p class="par1"></p><span style="color:deepskyblue">Protecting your digital assets</span></p></div>
+                    
+                    <p class="para2">Ensure the safety of your digital assets and information with our robust
+                        cybersecurity solutions, protecting your business from evolving threats with advanced technology
+                        and vigilant monitoring.</p>
+                </div>
+            </div>
+        </div>
+        <div>
+           <h2>Our <span style="color:deepskyblue">Approach</span>: Crafted Around You </h2>
+             </div>
+             <div>
+                <p class="para3">At Elbert Technology, we believe that great solutions are built on strong partnerships. Our approach is designed to create an engaging and collaborative journey with you, ensuring that every step we take is aligned with your unique vision and goals.</p>
+         </div>
+         <div class="Approach-button">
+            <button class="button1">Understand Indentation</button>
+            <button class="button1">Agile Development</button>  
+            <button class="button1">Seamless Development</button>  
+            <button class="button1">Continous Support and Growth</button></div>
+
+    </div>
+    <div class="subtitle">
+        <div class="image4">
+            <img src="https://elberttech.com/assets/Understanding-DXZlOUAD.svg" class="image4">
+            </div>
+            <div class="title">
+            <div class="heading2">
+                <h2 >Understanding & Ideation</h2>
+                </div>
+            <div class="para4">
+                <p class="para4" >We start by diving deep into your world. Through in-depth conversations and exploration, we seek to understand not just what you need but also the challenges you face and the aspirations you hold. Once we have a solid understanding, we move into a dynamic co-creation phase. Here, our diverse team of experts collaborates with you to brainstorm innovative ideas and potential solutions. We value your insights and feedback, using them to fuel our creativity and refine our approach.</p>
+                </div>
+                </div>
+                </div>
+                
+              <!----- <div class="details">
+                <div class="first">
+                    <h1 class="talk">Let's Talk</h1>
+                
+                
+                       <p class="para5">We're committed to providing exceptional service and support to our clients. Whether you have a specific inquiry or just want to say hello, we'd love to hear from you!</p>
+                
+                
+                   <input type="button">Ask Us Anything<button>
+                </div>
+             
+             <div class="us">
+                <p class="para6">Email us at:<p>
+                    <p class="para7">ContactUs@elberttech.com</p>
+                <img src="data:image/svg+xml,%3csvg%20width='48'%20height='48'%20viewBox='0%200%2048%2048'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3ccircle%20cx='24'%20cy='24'%20r='24'%20fill='%23009CD9'/%3e%3cpath%20d='M14%2019L22.1649%2024.7154C22.8261%2025.1783%2023.1567%2025.4097%2023.5163%2025.4993C23.8339%2025.5785%2024.1661%2025.5785%2024.4837%2025.4993C24.8433%2025.4097%2025.1739%2025.1783%2025.8351%2024.7154L34%2019M18.8%2032H29.2C30.8802%2032%2031.7202%2032%2032.362%2031.673C32.9265%2031.3854%2033.3854%2030.9265%2033.673%2030.362C34%2029.7202%2034%2028.8802%2034%2027.2V20.8C34%2019.1198%2034%2018.2798%2033.673%2017.638C33.3854%2017.0735%2032.9265%2016.6146%2032.362%2016.327C31.7202%2016%2030.8802%2016%2029.2%2016H18.8C17.1198%2016%2016.2798%2016%2015.638%2016.327C15.0735%2016.6146%2014.6146%2017.0735%2014.327%2017.638C14%2018.2798%2014%2019.1198%2014%2020.8V27.2C14%2028.8802%2014%2029.7202%2014.327%2030.362C14.6146%2030.9265%2015.0735%2031.3854%2015.638%2031.673C16.2798%2032%2017.1198%2032%2018.8%2032Z'%20stroke='white'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e" class="logo2">
+               <p class="para6">call us at:</p>
+               <p class="para7">7569697423</p>
+               <img src="data:image/svg+xml,%3csvg%20width='48'%20height='48'%20viewBox='0%200%2048%2048'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3ccircle%20cx='24'%20cy='24'%20r='24'%20fill='%23058C42'/%3e%3cpath%20d='M20.3803%2020.8534C21.0763%2022.303%2022.0251%2023.6616%2023.2266%2024.8632C24.4282%2026.0648%2025.7869%2027.0136%2027.2365%2027.7096C27.3612%2027.7694%2027.4235%2027.7994%2027.5024%2027.8224C27.7828%2027.9041%2028.127%2027.8454%2028.3644%2027.6754C28.4313%2027.6275%2028.4884%2027.5704%2028.6027%2027.4561C28.9523%2027.1064%2029.1271%2026.9316%2029.3029%2026.8174C29.9658%2026.3864%2030.8204%2026.3864%2031.4833%2026.8174C31.6591%2026.9316%2031.8339%2027.1064%2032.1835%2027.4561L32.3783%2027.6509C32.9098%2028.1824%2033.1755%2028.4481%2033.3198%2028.7335C33.6069%2029.301%2033.6069%2029.9713%2033.3198%2030.5389C33.1755%2030.8242%2032.9098%2031.09%2032.3783%2031.6214L32.2207%2031.779C31.6911%2032.3087%2031.4263%2032.5735%2031.0662%2032.7757C30.6667%2033.0001%2030.0462%2033.1615%2029.588%2033.1601C29.1751%2033.1589%2028.8928%2033.0788%2028.3284%2032.9186C25.295%2032.0576%2022.4326%2030.4332%2020.0447%2028.0452C17.6567%2025.6572%2016.0322%2022.7948%2015.1712%2019.7614C15.011%2019.197%2014.9309%2018.9148%2014.9297%2018.5018C14.9283%2018.0436%2015.0897%2017.4231%2015.3141%2017.0236C15.5164%2016.6636%2015.7812%2016.3988%2016.3108%2015.8691L16.4684%2015.7115C16.9999%2015.1801%2017.2656%2014.9143%2017.551%2014.77C18.1185%2014.4829%2018.7888%2014.4829%2019.3564%2014.77C19.6417%2014.9143%2019.9075%2015.1801%2020.4389%2015.7115L20.6338%2015.9064C20.9834%2016.256%2021.1582%2016.4308%2021.2725%2016.6066C21.7035%2017.2694%2021.7035%2018.124%2021.2725%2018.7869C21.1582%2018.9627%2020.9834%2019.1375%2020.6338%2019.4871C20.5195%2019.6014%2020.4623%2019.6586%2020.4145%2019.7254C20.2445%2019.9628%2020.1858%2020.3071%2020.2675%2020.5874C20.2905%2020.6663%2020.3204%2020.7287%2020.3803%2020.8534Z'%20stroke='white'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e" class="logo2">
+               <p class="para6">Visit us at:</p>
+               <p class="paara7">Main Branch:
+
+                401, SK Enclave, SAP St, Maitrivanam, Ameerpet, Hyderabad, Telangana 500016
+                
+                Branch Office:
+                
+                103, 1st Floor, JBS Towers, Bachupally, Miyapur, Hyderabad, Telangana, 500090</p>
+              <img src="data:image/svg+xml,%3csvg%20width='48'%20height='48'%20viewBox='0%200%2048%2048'%20fill='none'%20xmlns='http://www.w3.org/2000/svg'%3e%3ccircle%20cx='24'%20cy='24'%20r='24'%20fill='%23F9A620'/%3e%3cpath%20d='M24%2025C25.6569%2025%2027%2023.6569%2027%2022C27%2020.3431%2025.6569%2019%2024%2019C22.3431%2019%2021%2020.3431%2021%2022C21%2023.6569%2022.3431%2025%2024%2025Z'%20stroke='white'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3cpath%20d='M24%2034C28%2030%2032%2026.4183%2032%2022C32%2017.5817%2028.4183%2014%2024%2014C19.5817%2014%2016%2017.5817%2016%2022C16%2026.4183%2020%2030%2024%2034Z'%20stroke='white'%20stroke-width='2'%20stroke-linecap='round'%20stroke-linejoin='round'/%3e%3c/svg%3e" class="logo2">
+            
+               </div>
+              - </div>--->
+            
+            
+                <div class="footer">
+                    
+                       <div>
+                        <img src="https://elberttech.com/assets/Footer_logo-D5IX5x7B.svg" class="logo6">
+                       </div>
+                            <div class="column">
+                            <div class="products">
+                                <h3><span style="color: green;">Products</span></h3>
+                                <p>Resume Builder</p>
+                                 <p>Portfolio Builder</p>
+                                 <p>CRM</p>
+                            </div>
+                            <div class="industries">
+                                <h3><span style="color: green;">Industries</span></h3>
+                                <p>Healthcare</p>
+                                <p> Finance</p>
+                                <p> Retail</p>
+                                <p>Education</p>
+                                <p> Insurance</p>
+                                 <p> Airline</p>
+                            </div>
+                            </div>
+                     </div>
+                
+                        
+              
+         </div>
+</body>
+
+</html>
